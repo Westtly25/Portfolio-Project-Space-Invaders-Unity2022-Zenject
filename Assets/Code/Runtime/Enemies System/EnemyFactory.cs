@@ -8,5 +8,10 @@ namespace Assets.Code.Runtime.Enemies_System
 {
     public class EnemyFactory
     {
+
+        public EnemyFactory()
+        {
+            
+        }
     }
 }
