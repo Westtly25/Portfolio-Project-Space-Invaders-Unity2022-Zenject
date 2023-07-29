@@ -72,7 +72,6 @@ namespace Assets.Code.Scripts.Runtime.Save_System
                 // Handle file not found exception
                 logger.LogAsync(ex.Message);
             }
-
             catch (IOException ex)
             {
                 // Handle IO exception

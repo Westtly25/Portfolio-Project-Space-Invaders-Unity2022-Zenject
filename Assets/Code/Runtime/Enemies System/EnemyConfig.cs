@@ -8,13 +8,13 @@ namespace Assets.Code.Runtime.Enemies_System
     {
         [SerializeField, Range(int.MinValue, int.MaxValue)]
         private int id;
-        [SerializeField]
+        [SerializeField, Range(-1, 200)]
         private float health;
-        [SerializeField]
+        [SerializeField, Range(-1, 200)]
         private float armour;
-        [SerializeField]
+        [SerializeField, Range(-1, 200)]
         private float baseDamage;
-        [SerializeField]
+        [SerializeField, Range(-1, 200)]
         private float shootSpeed;
 
         [SerializeField]
