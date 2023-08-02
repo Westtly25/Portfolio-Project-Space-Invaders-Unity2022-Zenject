@@ -1,6 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.Pool;
-using Assets.Code.Runtime.Enemies_System;
 
 namespace Assets.Code.Runtime.Hero_System
 {
