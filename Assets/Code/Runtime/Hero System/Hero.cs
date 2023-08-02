@@ -1,6 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.Pool;
+using Assets.Code.Runtime.Enemies_System;
 
 namespace Assets.Code.Runtime.Hero_System
 {
@@ -10,14 +10,9 @@ namespace Assets.Code.Runtime.Hero_System
         [SerializeField]
         private MoveHandler moveHandler;
 
+        [SerializeField]
+        private ShootHandler shootHandler;
 
-        public Hero()
-        {
-        }
-    }
-
-    public class MoveHandler : MonoBehaviour
-    {
 
     }
 }
