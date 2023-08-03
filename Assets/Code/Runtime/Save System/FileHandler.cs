@@ -12,10 +12,8 @@ namespace Assets.Code.Scripts.Runtime.Save_System
         private readonly Logger logger;
 
         [Inject]
-        public FileHandler(Logger logger)
-        {
+        public FileHandler(Logger logger) =>
             this.logger = logger;
-        }
 
         public async Task<string> ReadFileAsync(string filePath)
         {

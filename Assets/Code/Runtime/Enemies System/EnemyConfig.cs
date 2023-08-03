@@ -16,6 +16,10 @@ namespace Assets.Code.Runtime.Enemies_System
         private float baseDamage;
         [SerializeField, Range(-1, 200)]
         private float shootSpeed;
+        [SerializeField, Range(0, 5)]
+        private float movementSpeed;
+        [SerializeField]
+        private EnemyDifficulty enemyDifficulty;
 
         [SerializeField]
         private Enemy shipPrefab;
