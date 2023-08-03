@@ -3,9 +3,9 @@ using Assets.Code.Scripts.Runtime.State_Machine;
 
 public class AppPausedState : State
 {
-    private readonly PauseHandler pauseHandler;
+    private readonly IPauseHandler pauseHandler;
 
-    public AppPausedState(PauseHandler pauseHandler) =>
+    public AppPausedState(IPauseHandler pauseHandler) =>
         this.pauseHandler = pauseHandler;
 
     public override void OnEnter()

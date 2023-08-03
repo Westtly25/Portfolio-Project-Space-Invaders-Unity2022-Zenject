@@ -7,7 +7,7 @@ using Assets.Code.Scripts.Runtime.Utilities;
 
 namespace Assets.Code.Scripts.Runtime.Save_System
 {
-    public class FileHandler
+    public class FileHandler : IFileHandler
     {
         private readonly Logger logger;
 

@@ -21,7 +21,7 @@ namespace Assets.Code.Scripts.Runtime.Installers
                      .AsSingle()
                      .NonLazy();
 
-            Container.BindInterfacesAndSelfTo<SaveHandler>()
+            Container.BindInterfacesAndSelfTo<SaveLoadService>()
                      .FromNew()
                      .AsSingle()
                      .NonLazy();

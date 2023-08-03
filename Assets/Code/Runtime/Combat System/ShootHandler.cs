@@ -1,10 +1,11 @@
 ﻿using System;
 using UnityEngine;
-using Assets.Code.Runtime.Combat_System;
-using Assets.Code.Runtime.Enemies_System;
 using UnityEngine.Pool;
+using Assets.Code.Runtime.Enemies_System;
+using System.Buffers;
+using Zenject;
 
-namespace Assets.Code.Runtime.Hero_System
+namespace Assets.Code.Runtime.Combat_System
 {
     [Serializable]
     public class ShootHandler
@@ -20,10 +21,16 @@ namespace Assets.Code.Runtime.Hero_System
 
         public void Shoot()
         {
+
+            
             for (int i = 0; i < shootingPoints.Length; i++)
             {
                 //shootingPoints[i].PointTransform;
             }
         }
+    }
+
+    public class ProjectilesPool : MemoryPool<Vector3, Projectile>
+    {
     }
 }

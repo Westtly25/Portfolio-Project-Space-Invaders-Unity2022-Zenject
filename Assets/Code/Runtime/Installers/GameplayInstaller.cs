@@ -3,6 +3,8 @@ using Assets.Code.Scripts.Runtime.Data;
 using Assets.Code.Scripts.Runtime.Pause;
 using Assets.Code.Scripts.Runtime.Input_System;
 using Assets.Code.Scripts.Runtime.State_Machine.Gameplay_State_Machine;
+using Assets.Code.Runtime.Enemies_System;
+using Assets.Code.Runtime.Combat_System;
 
 namespace Assets.Code.Scripts.Runtime.Installers
 {
@@ -29,6 +31,10 @@ namespace Assets.Code.Scripts.Runtime.Installers
                      .FromNew()
                      .AsSingle()
                      .NonLazy();
+
+            Container.BindMemoryPool<Projectile, ProjectilesPool>()
+                     .WithInitialSize(10)
+                     .WithMaxSize(20);
         }
     }
 }

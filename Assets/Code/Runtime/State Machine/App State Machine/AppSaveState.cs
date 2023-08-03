@@ -2,11 +2,11 @@ using UnityEngine;
 using Assets.Code.Scripts.Runtime.Save_System;
 using Assets.Code.Scripts.Runtime.State_Machine;
 
-public class AppSaveProgressState : State
+public class AppSaveState : State
 {
-    private readonly SaveHandler saveHandler;
+    private readonly ISaveLoadService saveHandler;
 
-    public AppSaveProgressState(SaveHandler saveHandler) =>
+    public AppSaveState(ISaveLoadService saveHandler) =>
         this.saveHandler = saveHandler;
 
     public override void OnEnter()

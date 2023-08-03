@@ -3,11 +3,11 @@ using Assets.Code.Scripts.Runtime.State_Machine;
 
 public class AppLoadState : State
 {
-    private readonly SaveHandler saveHandler;
+    private readonly ISaveLoadService saveHandler;
 
     public bool IsComplete => saveHandler.IsLoaded;
 
-    public AppLoadState(SaveHandler saveHandler) =>
+    public AppLoadState(ISaveLoadService saveHandler) =>
         this.saveHandler = saveHandler;
 
     public override void OnEnter()
