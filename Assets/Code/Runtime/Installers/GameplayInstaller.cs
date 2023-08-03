@@ -2,6 +2,7 @@
 using Assets.Code.Scripts.Runtime.Data;
 using Assets.Code.Scripts.Runtime.Pause;
 using Assets.Code.Scripts.Runtime.State_Machine.Gameplay_State_Machine;
+using Assets.Code.Scripts.Runtime.Input_System;
 
 namespace Assets.Code.Scripts.Runtime.Installers
 {
@@ -20,6 +21,11 @@ namespace Assets.Code.Scripts.Runtime.Installers
                      .NonLazy();
 
             Container.BindInterfacesAndSelfTo<PauseHandler>()
+                     .FromNew()
+                     .AsSingle()
+                     .NonLazy();
+
+            Container.BindInterfacesAndSelfTo<InputService>()
                      .FromNew()
                      .AsSingle()
                      .NonLazy();

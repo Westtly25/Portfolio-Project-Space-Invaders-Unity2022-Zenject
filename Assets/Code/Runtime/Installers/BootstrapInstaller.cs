@@ -40,11 +40,6 @@ namespace Assets.Code.Scripts.Runtime.Installers
                      .FromNew()
                      .AsSingle()
                      .NonLazy();
-
-            Container.BindInterfacesAndSelfTo<InputService>()
-                     .FromNew()
-                     .AsSingle()
-                     .NonLazy();
         }
     }
 }
