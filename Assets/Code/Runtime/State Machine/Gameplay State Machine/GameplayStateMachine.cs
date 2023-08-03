@@ -6,15 +6,11 @@ namespace Assets.Code.Scripts.Runtime.State_Machine.Gameplay_State_Machine
 {
     public class GameplayStateMachine : StateMachine, IPauseListener
     {
-        private readonly PauseHandler pauseHandler;
-
         private bool isPaused = false;
 
         [Inject]
-        public GameplayStateMachine(PlayerScore playerScore,
-                                    PauseHandler pauseHandler)
+        public GameplayStateMachine(PlayerScore playerScore)
         {
-            this.pauseHandler = pauseHandler;
 
             State[] states =
             {

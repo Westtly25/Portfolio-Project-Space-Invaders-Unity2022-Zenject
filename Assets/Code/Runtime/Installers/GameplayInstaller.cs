@@ -1,8 +1,8 @@
 ﻿using Zenject;
 using Assets.Code.Scripts.Runtime.Data;
 using Assets.Code.Scripts.Runtime.Pause;
-using Assets.Code.Scripts.Runtime.State_Machine.Gameplay_State_Machine;
 using Assets.Code.Scripts.Runtime.Input_System;
+using Assets.Code.Scripts.Runtime.State_Machine.Gameplay_State_Machine;
 
 namespace Assets.Code.Scripts.Runtime.Installers
 {
