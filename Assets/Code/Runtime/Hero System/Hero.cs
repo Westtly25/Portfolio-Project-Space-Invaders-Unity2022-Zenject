@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using Assets.Code.Runtime.Combat_System;
+using Assets.Code.Scripts.Runtime.Input_System;
 
 namespace Assets.Code.Runtime.Hero_System
 {
@@ -14,7 +15,14 @@ namespace Assets.Code.Runtime.Hero_System
         [SerializeField]
         private Transform cachedTransform;
 
+        private InputService inputService;
+
         public Transform CachedTransform => cachedTransform;
+
+        public void Initialize(InputService inputService)
+        {
+            this.inputService = inputService;
+        }
 
         private void OnEnable() =>
             cachedTransform = transform;
