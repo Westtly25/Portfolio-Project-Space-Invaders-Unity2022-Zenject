@@ -6,7 +6,6 @@ namespace Assets.Code.Runtime.Hero_System
     [RequireComponent(typeof(BoxCollider2D))]
     public class Hero : MonoBehaviour
     {
-        [SerializeField]
         private MoveHandler moveHandler;
 
         [SerializeField]
@@ -19,5 +18,10 @@ namespace Assets.Code.Runtime.Hero_System
 
         private void OnEnable() =>
             cachedTransform = transform;
+
+        private void Update()
+        {
+            //moveHandler.Move();
+        }
     }
 }
